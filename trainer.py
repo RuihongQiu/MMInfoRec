@@ -120,6 +120,13 @@ class Trainer:
         # [batch hidden_size ]
         rating_pred = torch.matmul(seq_out, test_item_emb.transpose(0, 1))
         return rating_pred
+    
+    def predict_full_att(self, seq_out):
+        # [item_num hidden_size]
+        test_item_emb = self.model.all_fused_embedding
+        # [batch hidden_size ]
+        rating_pred = torch.matmul(seq_out, test_item_emb.transpose(0, 1))
+        return rating_pred
 
 
 class MMInfoRecTrainer(Trainer):
