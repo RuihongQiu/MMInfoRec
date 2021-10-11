@@ -66,7 +66,7 @@ def main():
     cur_dir = os.getcwd()
     
     args.data_dir = cur_dir + '/data/'
-    args.output_dir = cur_dir + '/output/InfoRec/'
+    args.output_dir = cur_dir + '/output/'
 
     args.cuda_condition = torch.cuda.is_available() and not args.no_cuda
 
@@ -133,7 +133,7 @@ def main():
             print(f'Load Checkpoint From {pretrained_path}!')
 
         except FileNotFoundError:
-            print(f'{pretrained_path} Not Found! InfoRec is trained from scratch')
+            print(f'{pretrained_path} Not Found! MMInfoRec is trained from scratch')
 
         early_stopping = EarlyStopping(args.checkpoint_path, patience=10, verbose=True)
         for epoch in range(args.epochs):

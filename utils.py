@@ -144,7 +144,7 @@ def get_user_seqs(data_file):
     max_item = max(item_set)
 
     num_users = len(lines)
-    num_items = max_item + 2
+    num_items = max_item + 1
 
     valid_rating_matrix = generate_rating_matrix_valid(user_seq, num_users, num_items)
     test_rating_matrix = generate_rating_matrix_test(user_seq, num_users, num_items)
