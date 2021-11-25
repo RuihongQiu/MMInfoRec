@@ -16,4 +16,10 @@ If you find the our codes and datasets useful for your research or development, 
 }
 ```
 
+### MISC
+
+Our another sequential recommender model `DuoRec`, [Contrastive Learning for Representation Degeneration Problem in Sequential Recommendation](https://arxiv.org/abs/2110.05730) at WSDM 2022 is also available on GitHub, [DuoRec](https://github.com/RuihongQiu/DuoRec).
+
+### Credit
+
 This repo is based on [S3Rec](https://github.com/aHuiWang/CIKM2020-S3Rec).
