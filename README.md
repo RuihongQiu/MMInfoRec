@@ -5,13 +5,14 @@ Code for our ICDM 2021 Paper ["**Memory Augmented Multi-Instance Contrastive Pre
 If you find the our codes and datasets useful for your research or development, please cite our paper:
 
 ```
-@article{MMInfoRec,
+@inproceedings{MMInfoRec,
   author    = {Ruihong Qiu and
                Zi Huang and
                Hongzhi Yin},
-  title     = {Memory Augmented Multi-Instance Contrastive Predictive Coding for Sequential Recommendation},
-  journal = {CoRR},
-  volume = {abs/2109.00368},
+  title     = {Memory Augmented Multi-Instance Contrastive Predictive Coding for
+               Sequential Recommendation},
+  booktitle = {{IEEE} International Conference on Data Mining, {ICDM}},
+  pages     = {519--528},
   year      = {2021}
 }
 ```
